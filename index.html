@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cifras simplificadas de músicas populares brasileiras.">
+  <title>Tom & Cifra — Seu som, seu tom</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Tom e Cifra início"><span class="brand-mark">♪</span> tom<span>&</span>cifra</a>
+    <nav><a href="#catalogo">Cifras</a><a href="#sobre">Sobre</a></nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">☼</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">SEU REPERTÓRIO COMEÇA AQUI</span>
+        <h1>Toque as músicas<br><em>que todo mundo canta.</em></h1>
+        <p>Uma seleção de cifras populares para violão e guitarra. Encontre sua música, ajuste o tom e comece a tocar.</p>
+        <a class="primary-btn" href="#catalogo">Explorar cifras <span>→</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="sun"></div><div class="vinyl"><div class="vinyl-center">♪</div></div>
+        <div class="floating-note note-one">♫</div><div class="floating-note note-two">♪</div>
+        <div class="hero-caption">PLAY YOUR<br>OWN WAY.</div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div><strong>10</strong><span>cifras selecionadas</span></div>
+      <div><strong>100%</strong><span>sem letras protegidas</span></div>
+      <div><strong>♬</strong><span>feito para tocar</span></div>
+    </section>
+
+    <section class="catalog" id="catalogo">
+      <div class="section-heading">
+        <div><span class="eyebrow">BIBLIOTECA</span><h2>Escolha sua próxima música</h2></div>
+        <span class="result-count" id="resultCount">10 músicas</span>
+      </div>
+      <div class="toolbar">
+        <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Buscar música ou artista..." autocomplete="off"></label>
+        <select id="genreFilter" aria-label="Filtrar por gênero">
+          <option value="all">Todos os estilos</option><option value="Rock">Rock</option><option value="Sertanejo">Sertanejo</option><option value="MPB">MPB</option><option value="Pop Rock">Pop Rock</option>
+        </select>
+        <button id="favoritesFilter" class="filter-btn">♡ Favoritas</button>
+      </div>
+      <div class="layout">
+        <div class="song-list" id="songList" aria-label="Lista de músicas"></div>
+        <article class="sheet" id="sheet">
+          <div class="empty-state"><div>♫</div><h3>Escolha uma cifra</h3><p>Selecione uma música ao lado para ver os acordes.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="sobre">
+      <div class="about-icon">✳</div>
+      <div><span class="eyebrow">SOBRE O PROJETO</span><h2>Música boa é música compartilhada.</h2><p>O Tom & Cifra reúne versões simplificadas de progressões harmônicas para estudo. As cifras são referências de acompanhamento, não transcrições oficiais. Confira a gravação para ajustar ritmo, levada e detalhes.</p></div>
+    </section>
+  </main>
+  <footer><a class="brand" href="#"><span class="brand-mark">♪</span> tom<span>&</span>cifra</a><span>Feito para quem ama tocar. © 2026</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
